@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/input.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -24,6 +25,22 @@
             </div>
             <!-- button -->
             <a href="#" class="hidden md:block p-3 px-6 pt-2 text-light bg-orange-500 rounded-full baseline hover:bg-orange-400 font-bold">Get Started</a>
+            <!-- hamburger icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none ml-40">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+            <!-- mobile menu -->
+            <div class="md:hidden">
+                <div id="menu" class="absolute  flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#">Pricing</a>
+                    <a href="#">Product</a>
+                    <a href="#">About us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Community</a>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- hero section -->
@@ -248,5 +265,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
